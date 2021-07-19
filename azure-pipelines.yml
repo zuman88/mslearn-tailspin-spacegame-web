@@ -33,8 +33,8 @@ steps:
   displayName: 'Run gulp tasks'
   
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-    displayName: 'Write build info'
-    workingDirectory: Tailspin.SpaceGame.Web/wwwroot
+  displayName: 'Write build info'
+  workingDirectory: Tailspin.SpaceGame.Web/wwwroot
   
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
